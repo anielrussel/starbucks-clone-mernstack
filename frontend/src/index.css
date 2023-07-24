@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar {
+  /* Hide vertical scrollbar for Firefox, Chrome, Safari, and Edge */
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide vertical scrollbar for Internet Explorer */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
