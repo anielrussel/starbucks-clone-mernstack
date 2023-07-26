@@ -5,16 +5,18 @@ import AdminSidebar from "./AdminSidebar";
 interface MenuState {
   name: string;
   calories: number;
-  category: string;
-  subCategory: string;
+  category1: string;
+  category2: string;
+  category3: string;
   description: string;
 }
 const AdminNewProduct = () => {
   const [formData, setFormData] = useState<MenuState>({
     name: "",
     calories: 0,
-    category: "",
-    subCategory: "",
+    category1: "",
+    category2: "",
+    category3: "",
     description: "",
   });
 
@@ -33,7 +35,9 @@ const AdminNewProduct = () => {
     const { value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      category: value,
+      category1: value,
+      category2: "",
+      category3: "",
     }));
   };
 
@@ -41,7 +45,17 @@ const AdminNewProduct = () => {
     const { value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      subCategory: value,
+      category2: value,
+    }));
+  };
+
+  const handleSubCategory1Change = (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const { value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      category3: value,
     }));
   };
 
@@ -84,8 +98,9 @@ const AdminNewProduct = () => {
     formMenuData.append("image", imageFile);
     formMenuData.append("name", formData.name);
     formMenuData.append("calories", formData.calories.toString());
-    formMenuData.append("category", formData.category);
-    formMenuData.append("subCategory", formData.subCategory);
+    formMenuData.append("category1", formData.category1);
+    formMenuData.append("category2", formData.category2);
+    formMenuData.append("category3", formData.category3);
     formMenuData.append("description", formData.description);
 
     try {
@@ -97,8 +112,9 @@ const AdminNewProduct = () => {
       setFormData({
         name: "",
         calories: 0,
-        category: "",
-        subCategory: "",
+        category1: "",
+        category2: "",
+        category3: "",
         description: "",
       });
       console.log("Image uploaded successfully", response.data);
@@ -132,27 +148,119 @@ const AdminNewProduct = () => {
             onChange={handleFormChange}
             className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
           />
-
-          <label htmlFor="category">Category</label>
+          {/* category 1 */}
+          <label htmlFor="category1">Category</label>
           <select
-            name="category"
+            name="category1"
             onChange={handleCategoryChange}
             className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
           >
-            <option value={"menu"}>Menu</option>
-            <option value={"merchandise"}>Merchandise</option>
+            <option value="">Select Category</option>
+            <option value="menu">Menu</option>
+            <option value="merchandise">Merchandise</option>
           </select>
+          {/* categiry 2 */}
+          {/* check if menu is chosen then show submenu */}
+          {formData.category1 === "menu" && (
+            <>
+              <label htmlFor="category2">Select Subcategory for Menu</label>
+              <select
+                name="category2"
+                onChange={handleSubCategoryChange}
+                className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
+              >
+                <option value="">Select category</option>
+                <option value={"drinks"}>Drinks</option>
+                <option value={"foods"}>Foods</option>
+                <option value={"coffee"}>Coffee</option>
+              </select>
+            </>
+          )}
 
-          <label htmlFor="subcategory">subCategory</label>
-          <select
-            name="subcategory"
-            onChange={handleSubCategoryChange}
-            className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
-          >
-            <option value={"drinks"}>Drinks</option>
-            <option value={"foods"}>Foods</option>
-            <option value={"coffee"}>Coffee</option>
-          </select>
+          {/* check if merchandise is chosen then show submenu */}
+          {formData.category1 === "merchandise" && (
+            <>
+              <label htmlFor="category2">
+                Select Subcategory for Merchandise
+              </label>
+              <select
+                name="category2"
+                onChange={handleSubCategoryChange}
+                className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
+              >
+                <option value={"blackpink"}>BLACKPINK + Starbucks</option>
+                <option value={"core refresh"}>Core Refresh</option>
+                <option value={"summer field"}>Summer Field</option>
+                <option value={"shining pastel"}>Shining Pastel</option>
+                <option value={"summer series"}>
+                  Summer Been There Series
+                </option>
+                <option value={"navy core"}>Navy Core</option>
+                <option value={"core green"}>Core Green</option>
+                <option value={"been there"}>Been There Series</option>
+              </select>
+            </>
+          )}
+          {/* category 3 */}
+          {/* if drinks is chosen */}
+          {formData.category1 === "menu" && formData.category2 === "drinks" && (
+            <>
+              <label htmlFor="category3">Select Subcategory for Drinks</label>
+              <select
+                name="category3"
+                onChange={handleSubCategory1Change}
+                className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
+              >
+                <option value="">Select category</option>
+                <option value={"featured"}>Featured Drinks</option>
+                <option value={"brewed"}>Brewed Coffee</option>
+                <option value={"espresso"}>Espresso</option>
+                <option value={"blended"}>Blended Beverage</option>
+                <option value={"teavana"}>Teavana Tea</option>
+                <option value={"refresher"}>Starbucks Refreshers</option>
+                <option value={"chocolate"}>Chocolate & More</option>
+                <option value={"reserve"}>Starbucks Reserve</option>
+                <option value={"traveler"}>Coffee Traveler</option>
+              </select>
+            </>
+          )}
+
+          {/* if fooed is chosen */}
+          {formData.category1 === "menu" && formData.category2 === "foods" && (
+            <>
+              <label htmlFor="category3">Select Subcategory for Food</label>
+              <select
+                name="category3"
+                onChange={handleSubCategory1Change}
+                className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
+              >
+                <option value={"featured"}>Featured Food</option>
+                <option value={"allday"}>All-day Bakery</option>
+                <option value={"sandwiches"}>Sandwiches & Pastas</option>
+                <option value={"oatmeal"}>Oatmeal, Yogurts, & Fruits</option>
+                <option value={"desserts"}>Desserts</option>
+                <option value={"bake"}>Bake Box</option>
+                <option value={"ready"}>Ready-to-Eat & More</option>
+              </select>
+            </>
+          )}
+
+          {/* if coffee is chosen */}
+          {formData.category1 === "menu" && formData.category2 === "coffee" && (
+            <>
+              <label htmlFor="category3">Select Subcategory for Coffee</label>
+              <select
+                name="category3"
+                onChange={handleSubCategory1Change}
+                className="mb-3 py-1 pl-1 outline-blue-500 rounded-sm"
+              >
+                <option value={"bean"}>Whole Bean</option>
+                <option value={"via"}>Starbucks VIA®</option>
+                <option value={"origami"}>Starbucks Origami</option>
+                <option value={"reserve"}>Starbucks Reserve®</option>
+              </select>
+            </>
+          )}
 
           <label htmlFor="description">Description</label>
           <textarea

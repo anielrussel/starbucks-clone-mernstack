@@ -17,7 +17,8 @@ export const findAllMenu = async (req: Request, res: Response) => {
 };
 
 export const createProductMenu = async (req: Request, res: Response) => {
-  const { name, calories, category, subCategory, description } = req.body;
+  const { name, calories, category1, category2, category3, description } =
+    req.body;
   const file = req.files?.image as fileUpload.UploadedFile;
 
   try {
@@ -36,8 +37,9 @@ export const createProductMenu = async (req: Request, res: Response) => {
       data: {
         name,
         calories: parseInt(calories),
-        category,
-        subCategory,
+        category1,
+        category2,
+        category3,
         description,
         imageUrl,
       },

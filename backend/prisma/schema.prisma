@@ -14,8 +14,9 @@ model Menu {
   id          Int      @id @default(autoincrement())
   name        String?
   calories    Int
-  category    String
-  subCategory String
+  category1   String
+  category2   String
+  category3   String
   description String?
   imageUrl    String?
   createdAt   DateTime @default(now())

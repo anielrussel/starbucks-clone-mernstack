@@ -11,18 +11,9 @@ const Home: React.FC = () => {
           className="bg-cover bg-right md:bg-center h-[390px] md:h-[560px]"
           style={{
             backgroundImage:
-              "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/XkuwBiAmpJs2P5KFVFozjGyoTUTakTcQbuma5hiV.jpeg')",
+              "url(https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/D7lOSBwWalBmbG0epwZCe8pnDKuWXajVoDoU41O9.jpeg)",
           }}
-        >
-          <div className="flex flex-col gap-12 justify-center pl-6 md:pl-[250px] pt-32 md:pt-[180px]">
-            <h1 className="text-4xl md:text-7xl font-extrabold text-green-950">
-              Burst of Summer
-            </h1>
-            <p className="border border-green-950 rounded-full max-w-[210px] px-4 py-2 text-md font-bold text-green-900 cursor-pointer">
-              Discover the flavors
-            </p>
-          </div>
-        </header>
+        ></header>
 
         <div className="md:px-32 px-0 flex flex-col">
           <section className="mt-10 flex flex-col md:flex-row">
@@ -30,13 +21,14 @@ const Home: React.FC = () => {
               className="bg-cover bg-center h-[250px] md:h-[320px] md:w-[50%]"
               style={{
                 backgroundImage:
-                  "url('https://starbucks.ph/seed_data/Starbucks_eGift_-_Homepage.jpg')",
+                  "url(https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/0LRcvliLhkmyf5c8xIKKewnZBEDz7Ys552VSt7LN.jpeg)",
               }}
             ></div>
-            <div className="bg-green-900 flex flex-col gap-8 justify-center items-center text-center text-white py-10 px-12 md:w-[50%]">
-              <h1 className="text-2xl font-bold">Gifting Made Easy</h1>
+            <div className="bg-black flex flex-col gap-8 justify-center items-center text-center text-white py-10 px-12 md:w-[50%]">
+              <h1 className="text-2xl font-bold">Now Headlining</h1>
               <p className="font-semibold">
-                Order and send a Starbucks eGift through GLife on GCash today.
+                We’ve united with the phenomenal K-pop Girl Group BLACKPINK to
+                unleash a new experience and dial up the summer fun.
               </p>
               <button className="border border-white rounded-full px-4 py-1 hover:bg-green-800">
                 Learn more
@@ -50,14 +42,15 @@ const Home: React.FC = () => {
                 className="bg-cover bg-center h-[250px] md:h-[320px]"
                 style={{
                   backgroundImage:
-                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/LkfYZ38GvsmXStVCGmBeK4RVvh9HH0SjjFqAxhjR.jpeg')",
+                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/lJTaicf2VIxahcqnYZ6Ozi0N1YelTmwVEq8j1oE5.jpeg')",
                 }}
               ></div>
-              <div className="bg-green-900 flex flex-col gap-8 justify-center items-center text-center text-white h-[300px] px-12">
-                <h1 className="text-2xl font-bold">Caramel Honey Yummy</h1>
+              <div className="bg-black flex flex-col gap-8 justify-center items-center text-center text-white h-[250px] px-12">
+                <h1 className="text-2xl font-bold">
+                  Go Reusable with BLACKPINK
+                </h1>
                 <p className="font-semibold">
-                  The new Honeycomb Salted Caramel Oatmilk will leave you
-                  wanting to relax, refresh and repeat all summer long.
+                  Turn up your summer with feel-good oaty sips.
                 </p>
                 <button className="border border-white rounded-full px-4 py-1 hover:bg-green-800">
                   Sip, sip, go
@@ -70,17 +63,18 @@ const Home: React.FC = () => {
                 className="bg-cover bg-center h-[250px] md:h-[320px]"
                 style={{
                   backgroundImage:
-                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/MMmBL3hCJWBrwaXmStFvmiKmTjXM6US0zgz0P2WW.jpeg')",
+                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/nMX87EBkNH0jNYE7Ssqd1im3bsEa3Q5o7ENSQK3k.jpeg')",
                 }}
               ></div>
-              <div className="bg-green-900 flex flex-col gap-8 justify-center items-center text-center text-white h-[300px] px-12">
-                <h1 className="text-2xl font-bold">Good day goodness</h1>
+              <div className="bg-black flex flex-col gap-8 justify-center items-center text-center text-white h-[250px] px-12">
+                <h1 className="text-2xl font-bold">
+                  For the BLINK in your life
+                </h1>
                 <p className="font-semibold">
-                  Yummy treats for your summer days with new and returning
-                  snacks.
+                  Fill your favorite drink and go wherever the day takes you.
                 </p>
                 <button className="border border-white rounded-full px-4 py-1 hover:bg-green-800">
-                  Crave more
+                  See more
                 </button>
               </div>
             </section>
@@ -92,13 +86,14 @@ const Home: React.FC = () => {
                 className="bg-cover bg-center h-[250px] md:h-[320px]"
                 style={{
                   backgroundImage:
-                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/eDOMra6X6535Yzi2y48b6YrNwboEnmaAI8rdvpza.jpeg')",
+                    "url('https://starbuckscard.ph/sbcard-admin/storage/app/public/banners/lfRrcTYEynUz7Qow5WKyOsps4hkmt3vaDD3gIW1y.jpeg')",
                 }}
               ></div>
               <div className="bg-[#ceeae3] flex flex-col gap-8 justify-center items-center text-center text-black h-[300px] px-12">
-                <h1 className="text-2xl font-bold">Shining Pastel</h1>
+                <h1 className="text-2xl font-bold">Summer Forever</h1>
                 <p className="font-semibold">
-                  Fill your favorite drink and go wherever the day takes you.
+                  Yummy treats for your summer days with new and returning
+                  snacks.
                 </p>
                 <button className="border border-black rounded-full px-4 py-1 hover:bg-green-800">
                   Explore

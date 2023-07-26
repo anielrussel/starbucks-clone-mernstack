@@ -37,7 +37,7 @@ const MenuProducts: React.FC = () => {
 
   return (
     <div className="font-open-sans">
-      <nav className="bg-[#f9f9f9] md:px-32 px-8 py-6 flex gap-4 md:gap-[150px] items-center justify-between md:justify-normal">
+      <nav className="bg-[#f9f9f9] md:px-32 px-8 py-6 flex gap-4 md:gap-[195px] items-center justify-between md:justify-normal">
         <h1 className="font-semibold text-2xl">Menu</h1>
         <div className="flex items-center justify-end">
           <input
@@ -50,61 +50,61 @@ const MenuProducts: React.FC = () => {
           </span>
         </div>
       </nav>
-      <div className="md:px-32 px-8 flex md:flex-row flex-col md:gap-[65px]">
+      <div className="md:px-32 px-8 flex md:flex-row flex-col md:gap-[100px]">
         <div className="mt-4 md:block flex md:flex-col overflow-x-auto custom-scrollbar">
           {/* drinks */}
           <h1 className="font-semibold text-lg hidden md:block">Drinks</h1>
           <ul className="flex md:flex-col gap-4 md:mt-4">
-            <li className=" text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className=" text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Featured Drinks
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Brewed Coffee
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Espresso
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Blended Beverage
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Teavana Tea
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Starbucks Refreshers
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Chocolate & More
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Starbucks Reserve®
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal pr-4 md:pr-0">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer pr-4 md:pr-0">
               Coffee Traveler
             </li>
           </ul>
           {/* foods */}
           <h1 className="font-semibold text-lg mt-10 hidden md:block">Food</h1>
           <ul className="flex md:flex-col gap-4 md:mt-4">
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Featured Food
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               All-day Bakery
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Sandwiches & Pastas
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Oatmeal, Yogurts, & Fruits
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Desserts
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Bake Box
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal  pr-4 md:pr-0">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer  pr-4 md:pr-0">
               Ready-to-Eat & More
             </li>
           </ul>
@@ -113,16 +113,16 @@ const MenuProducts: React.FC = () => {
             At Home Coffee
           </h1>
           <ul className="flex md:flex-col gap-4 md:mt-4">
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Whole Bean
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Starbucks VIA®
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Starbucks Origami
             </li>
-            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-normal">
+            <li className="text-gray-500 md:font-medium font-normal text-sm md:text-lg cursor-pointer">
               Starbucks Reserve®
             </li>
           </ul>
@@ -134,12 +134,12 @@ const MenuProducts: React.FC = () => {
           </h1>
           {/* featured drinks */}
           <div className="flex flex-wrap md:justify-between">
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
-                  src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/categories/1_1685980622.jpg"
+                  src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/457/LSGoHs1mg4zLufH8lzoZMebE7dujj4OL2ViXDDeD.jpeg"
                   alt="featured-drinks"
-                  className="rounded-full hover:scale-110 ease-in-out duration-300 md:w-auto w-[100px]"
+                  className="rounded-full hover:scale-110 ease-in-out duration-300 md:w-[150px] w-[100px]"
                 />
               </div>
               <h1 className="font-semibold md:text-xl text-md">
@@ -147,7 +147,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* brewed coffee */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_BrewedCoffee.jpg"
@@ -160,7 +160,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* espresso */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_Espresso.jpg"
@@ -171,7 +171,7 @@ const MenuProducts: React.FC = () => {
               <h1 className="font-semibold md:text-xl text-md">Espresso</h1>
             </div>
             {/* blended beverage */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_BlendedBeverage.jpg"
@@ -184,7 +184,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* Teavana tea */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_TeavanaTea.jpg"
@@ -195,7 +195,7 @@ const MenuProducts: React.FC = () => {
               <h1 className="font-semibold md:text-xl text-md">Teavana Tea</h1>
             </div>
             {/* starbucks refresher */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/categories/41.jpg"
@@ -208,7 +208,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* chocolate & more */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_Chocolate_More.jpg"
@@ -221,7 +221,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* Starbucks Reserve® */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbucks.ph/seed_data/CATEG_StarbucksReserve.jpg"
@@ -234,7 +234,7 @@ const MenuProducts: React.FC = () => {
               </h1>
             </div>
             {/* coffee traveler */}
-            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full">
+            <div className="flex items-center mt-4 gap-4 md:w-[50%] w-full cursor-pointer">
               <div className="rounded-full overflow-hidden">
                 <img
                   src="https://starbuckscard.ph/sbcard-admin/storage/app/public/menu/categories/39_1667970623.jpg"
