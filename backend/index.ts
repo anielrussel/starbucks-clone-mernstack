@@ -5,6 +5,7 @@ import {
   createProductMenu,
   deleteProductMenu,
   findAllMenu,
+  updateMenu,
 } from "./controllers/MenuController";
 import cloudinary from "cloudinary";
 import fileUpload from "express-fileupload";
@@ -39,6 +40,7 @@ app.get("/", (req: Request, res: Response) => {
 app.post("/productMenu", createProductMenu);
 app.delete("/deleteMenu/:id", deleteProductMenu);
 app.get("/menu", findAllMenu);
+app.put("/updateMenu/:id", updateMenu);
 
 // listen to app
 app.listen(PORT, () => console.log("listening to port " + PORT));
